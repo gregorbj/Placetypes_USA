@@ -14,8 +14,9 @@ Description: This source package includes scripts that use the Environmental
   process_sld.R and misc.R scripts in the R directory prepare the SLD and
   related data for use in a Shiny app. The server.R, ui.R, and helper.R scripts
   that are part of the Shiny app are in the app directory. Raw data used in
-  creating the SLD-derived datasets are in the inst/extdata directory.
-  Processed place type datasets are in the data directory. Data used in the
-  Shiny app are in the app directory.
+  creating the SLD-derived datasets are excluded from the git repository
+  because of their size. Processed place type datasets are in the data
+  directory. However the shapefile of Census block groups is excluded because
+  of its size. Data used in the Shiny app are in the app directory.
 License: Apache2
 LazyData: TRUE
