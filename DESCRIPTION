@@ -1,0 +1,21 @@
+Package: Placetypes_USA
+Type: Source Package
+Title: Place Type Analysis Using EPA's Smart Location Database
+Version: 1
+Date: 2016-09-07
+Author: Brian Gregor
+Maintainer: gregor@or-analytics.com
+Description: This source package includes scripts that use the Environmental
+  Protection Agency's (EPA) Smart Location Database to develop place type
+  designations at the Census block group level. Place types are categories of
+  land uses that are useful for describing development patterns and their
+  relationship to human behavior (e.g. travel behavior) and well being
+  (e.g. health). There are two sets of scripts in the package. The
+  process_sld.R and misc.R scripts in the R directory prepare the SLD and
+  related data for use in a Shiny app. The server.R, ui.R, and helper.R scripts
+  that are part of the Shiny app are in the app directory. Raw data used in
+  creating the SLD-derived datasets are in the inst/extdata directory.
+  Processed place type datasets are in the data directory. Data used in the
+  Shiny app are in the app directory.
+License: Apache2
+LazyData: TRUE

@@ -1,0 +1,26 @@
+<h3>Location Type</h3>
+<hr/>
+<p>Location types describe the the general urban context of the place. There are 5 location types as listed below. Staff at the Oregon Department of Transportation (ODOT) developed these location types as a measure to assist with the modeling of transportation behavior.</p>
+<ul>
+  <li>Urbanized: A contiguous area of urban development which has a large population. The existence of an urbanized area defines a metropolitan area.</li>
+  <li>Urban Near Urbanized: Urban development (e.g. cities, towns, communities) located in the fringe of an urbanized area but are not part of the contiguous urbanized area.</li>
+  <li>Rural Near Urbanized: Rural development (open space, farmlands, forest lands, and scattered development) located in the fringe of an urbanized area.</li>
+  <li>Urban Not Near Urbanized: Urban development not located in the fringe of an urbanized area.</li>
+  <li>Rural Not Near Urbanized: Rural development not located in the fringe of an urbanized area.</li>
+</ul>
+<p>The following attributes are used to define location types. The listed attributes are similar to those developed by ODOT staff to characterize the different types. The interface allows the user to change threshold values of these attributes to evaluate their effects on location type designations. The interface is populated with default values that appear to produce reasonable results.</p>
+<ul>
+  <li>Urbanized Area Threshold - Population Within 5 Miles: This is the minimum population that must be present within a 5-mile radius of the block group centroid in order for the block group to be considered part of an urbanized area. The default value is 30,000.</li>
+  <li>Urbanized Area Urban Density Threshold - Population within 1 Mile: This is the minimum population that must be present within a 1-mile radius of the block group centroid in order for the block group to be considered urban enough to be considered part of an urbanized area. The default value is 1000.</li>
+  <li>Urbanized Vicinity Threshold - Population within 15 Miles: This is the minimum population that must be present within a 15-mile radius of the block group centroid in order for the block group to be considered to be within the fringe of an urbanized area.  The default value is 60,000.</li>
+  <li>Urbanized Vicinity Urban Density Threshold - Population Within 1 Mile: This is the minimum population that must be present within a 1-mile radius of the block group centroid within an urbanized area fringe in order for the block group to be considered urban. The default value is 2000.</li>
+  <li>Non-urbanized Vicinity Urban Density Threshold - Population Within 2 Miles: This is the minimum population that must be present within a 2-mile radius of the block group centroid outside of any urbanized area fringe in order for the block group to be considered urban. The default value is 2000.</li>
+</ul>    
+<p>Rules are used to designate location types using the chosen threshold values.</p>
+<ul>
+  <li>Urbanized: The Urbanized Area Threshold and the Urbanized Area Urban Density Threshold are met or exceeded.</li>
+  <li>Urban Near Urbanized: The Urbanized Vicinity Threshold and the Urbanized Vicinity Urban Density Threshold are met or exceeded.</li>
+  <li>Rural Near Urbanized: The Urbanized Vicinity Threshold is met or exceeded, but the Urban Density Threshold is not met.</li>
+  <li>Urban Not Near Urbanized: The Urbanized Vicinity Threshold is not met, but the Non-Urbanized Vicinity Urban Density Threshold is met or exceeded.</li>
+  <li>Rural Not Near Urbanized: Neither the Urbanized Vicinity Threshold nor the Non-Urbanized Vicinity Urban Density Threshold are met.</li>
+</ul>
